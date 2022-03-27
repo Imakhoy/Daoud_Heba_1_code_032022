@@ -1,0 +1,279 @@
+
+/*-----MEDIA QUERIES ----------------*/
+@media screen and (min-width: 767px) {
+
+    header{
+        line-height: 100px;
+        height: 100px; 
+        h1{
+            font-family: 'Shrikhand', cursive;
+            font-size: 4vw;
+        }
+    }
+    section{
+        margin: auto;
+        width: 90%;
+    }
+    article{
+    box-sizing: content-box;
+    width: 100%;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 150px;
+        padding: 0;
+        font-size: 25px;
+        padding: 10px 80px;
+        h3{
+            font-family: 'Shrikhand', cursive;
+            font-size: 40px;
+        }
+        p{
+            text-align: center;
+            margin: 55px 0 0 0px;
+        }
+    }
+    
+    button {
+        
+        font-size: 25px;
+        width: 300px;
+        height: 80px;
+    }
+    }
+    
+    @media screen and (min-width: 767px) and (max-width : 1099px)  {
+    
+    .city_header{
+        height: 340px;
+        background-color: transparent;
+        > h2 {
+            font-size: 35px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        > p {
+            display: inline;
+            font-size: 20px;
+        }
+        > div {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 50%;
+            font-size: 25px;
+            height: 10%;
+        }
+        button{
+            margin-left: 50px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        span {
+            line-height: 28px;
+            margin-left: 20px;
+        }
+    }
+    
+    .rules_container{
+        height: 130px ;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        justify-content: center;
+        h2 {
+            font-size: 25px;
+            margin-left: 40px;
+            margin-top: 0px;
+        }
+        .rules {
+            width: 25%;
+            height: 80px;
+            font-size: 15px;
+            padding-right: 20px;
+        }
+        span{
+            align-self: flex-end;
+            justify-self: center;
+            height: auto;
+            width: 65%;
+            font-size: 18px ;
+            text-align: left;
+        }
+        i{
+            position: absolute;
+            margin-right: 0;
+            margin-left: 30px;
+            left: 0;
+            align-self: flex-start;
+        }
+        .fa-store{
+            font-size: 20px;
+    ;
+        }
+        .fa-mobile-alt{
+            font-size: 20px;
+    
+        }
+        .fa-list{
+            font-size: 20px;
+    
+        }
+        .number {
+            top: 30%;
+        }
+    }
+    .restaurants_container {
+        height: 700px;
+        justify-content: center;
+        padding-bottom: 150px;
+        
+        h2{
+            font-size: 40px;
+            text-align: center;
+        }
+        article {
+            margin: 20px;
+            width: 35%;
+            height: 280px;
+            ;
+        }
+        .picture {
+            max-width: 150%;
+            max-height: 150%;
+            top: 0px;
+        }
+        h3{
+            font-size: 22px;
+        }
+        h4{
+            font-size: 20px;
+        }
+    }
+    .new{
+        position: absolute;
+        height: 30px;
+        width: 100px;
+        line-height:30px;
+        font-size: 15px;
+    }
+    footer{
+        font-size: 20px;
+        h3{
+            font-family: 'Shrikhand', cursive;
+            font-size: 20px;
+        }
+    }
+    /*resize one particular picture*/
+    .restaurants_container {.note_photo{
+        top: -130px;
+    }}
+    
+    /*----------RESTAURANTS------------*/
+    .photo {
+        position: relative;
+        img{
+        top: -250px;
+    }
+    .note_photo{
+        top: -420px;
+    }
+    }
+        
+    .fa-arrow-left{
+        font-size: 40px;
+    }
+    .drop_down_menu{
+        padding: 10px 0px 0px 0px;
+        width: 100%;
+        margin-top: 250px;
+        h2{
+            margin-left: 40px;
+            font-size: 35px;
+            font-family: 'Shrikhand', cursive;
+        }
+        .heart-2{ 
+            top: 10px;
+            font-size: 25px;
+            margin-right: 100px;
+            &:hover .heart_appear {
+                animation: put_up2 2s forwards;}
+            .full-heart{
+                right: 5px;
+                bottom: 52px;
+                height: 15px;
+            }
+            .heart_appear{
+                left: 2px;
+                top: 48px;
+            }
+            
+            }
+        button{
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+    }
+    
+    .container {
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        
+        h3{
+            font-size: 30px;
+        }
+        .menu__picker{
+            height: 70px;
+            padding: 20px 3% 20px 2%;
+            @include box__shadow;
+            &:hover .checked{
+                animation: checked 2s;
+            }
+            &:hover .text__price{
+                animation: reduce 2s;
+            }
+            &:hover .price{
+                animation: move_price_2 2s;
+            }
+            &:hover .fa-check-circle{
+                animation: turn-around 2s;
+            }
+        }
+        .text__price{
+            font-size: 25px;
+            margin-top: 0; margin-bottom: 0;
+        }
+    
+        h4{
+            font-size: 30px;
+            margin-top: 0; margin-bottom: 0; 
+        }
+    }
+    .high__size{
+        height: 700px;
+    }
+    /*ANIMATION CHECKED */
+    .checked {
+        position: absolute;
+        display: flex;
+        width: 0;
+        right: 0;
+        top: 0;
+        border-radius: 0 20px 20px 0;
+        background-color: $color-tertiary;
+        /*@include box__shadow-checked;*/
+        .fa-check-circle{
+            align-self: center;
+            padding: 0 50px 0 50px;
+            font-size: 40px;
+            color: white;
+            transform-origin: center;
+        }
+    }
+    }
+    
+    

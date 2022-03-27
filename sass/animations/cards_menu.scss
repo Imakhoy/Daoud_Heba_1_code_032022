@@ -1,0 +1,25 @@
+
+/* ---BOUCLE SASS--- .anim-menu-1à10 */
+
+$number_of_cards: 1;
+$total: 10;
+@while $number_of_cards <= $total {
+  .anim_menu-#{$number_of_cards} {
+    animation : appear 2s+($number_of_cards/2);
+  }
+  $number_of_cards: $number_of_cards + 1;
+}
+
+@keyframes appear {
+    0%{ opacity: 0;
+    }
+    49%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}

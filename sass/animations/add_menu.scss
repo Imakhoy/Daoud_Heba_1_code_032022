@@ -1,0 +1,46 @@
+.checked {
+    position: absolute;
+    display: flex;
+    width: 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    border-radius: 0 20px 20px 0;
+    background-color: $color-tertiary;
+    .fa-check-circle{
+        align-self: center;
+        padding: 0px 30px 0px 30px;
+        font-size: 20px;
+        color: white;
+        transform-origin: center;
+    }
+}
+@keyframes checked {
+    from{width: 0;}
+    to{width: 20%}
+}
+@keyframes turn-around {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@keyframes move_price {
+    from{right: 20px;}
+    to{right: 80px;}
+}
+@keyframes move_price_2 {
+    from{right: 20px;}
+    to{right: 190px;}
+}
+@keyframes move_price_3 {
+    from{right: 20px;}
+    to{right: 270px;}
+}
+@keyframes move_price_desktop {
+    from{right: 20px;}
+    to{right: 130px;}
+}
+@keyframes reduce {
+    from{width: 90%;}
+    to{width: 67%;}
+}
+
