@@ -236,9 +236,7 @@
             &:hover .text__price{
                 animation: reduce 2s;
             }
-            &:hover .price{
-                animation: move_price_2 2s;
-            }
+            
             &:hover .fa-check-circle{
                 animation: turn-around 2s;
             }

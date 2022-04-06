@@ -191,9 +191,7 @@
             &:hover .text__price{
                 animation: reduce 2s forwards;
             }
-            &:hover .price{
-                animation: move_price_3 2s forwards;
-            }
+            
             &:hover .fa-check-circle{
                 animation: turn-around 2s forwards;
             }

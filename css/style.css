@@ -401,29 +401,34 @@ button:hover {
   position: absolute;
   top: 50%;
   right: 50%;
-  animation: loader 1.85s linear;
+  animation: loader 4.5s forwards;
   margin: 0 0 0 -25px;
 }
 
 .loading-wrapper {
-  z-index: 1;
-  animation: home 0s 3s both;
+  animation: home 0s 4.5s both;
 }
 
 @keyframes home {
-  0% {
+  from {
     transform: translateX(-9999px);
   }
-  100% {
+  to {
     transform: translateX(0);
   }
 }
 @keyframes loader {
   0% {
     transform: rotate(0);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(360deg);
+    opacity: 0.7;
   }
   100% {
     transform: rotate(360deg);
+    opacity: 0;
   }
 }
 .checked {
@@ -446,7 +451,7 @@ button:hover {
 
 @keyframes checked {
   from {
-    width: 0;
+    width: 0%;
   }
   to {
     width: 20%;
@@ -468,28 +473,12 @@ button:hover {
     right: 80px;
   }
 }
-@keyframes move_price_2 {
-  from {
-    right: 20px;
-  }
-  to {
-    right: 190px;
-  }
-}
-@keyframes move_price_3 {
-  from {
-    right: 20px;
-  }
-  to {
-    right: 270px;
-  }
-}
 @keyframes move_price_desktop {
   from {
     right: 20px;
   }
   to {
-    right: 130px;
+    right: 30px;
   }
 }
 @keyframes reduce {
@@ -870,9 +859,6 @@ button:hover {
   .container .menu__picker:hover .text__price {
     animation: reduce 2s;
   }
-  .container .menu__picker:hover .price {
-    animation: move_price_2 2s;
-  }
   .container .menu__picker:hover .fa-check-circle {
     animation: turn-around 2s;
   }
@@ -1100,9 +1086,6 @@ button:hover {
   }
   .container .menu__picker:hover .text__price {
     animation: reduce 2s forwards;
-  }
-  .container .menu__picker:hover .price {
-    animation: move_price_3 2s forwards;
   }
   .container .menu__picker:hover .fa-check-circle {
     animation: turn-around 2s forwards;
